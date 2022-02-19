@@ -1,0 +1,14 @@
+diff --git a/node_modules/rc-overflow/lib/Overflow.js b/node_modules/rc-overflow/lib/Overflow.js
+index 0fce60c..49a964e 100644
+--- a/node_modules/rc-overflow/lib/Overflow.js
++++ b/node_modules/rc-overflow/lib/Overflow.js
+@@ -202,7 +202,8 @@ function Overflow(props, ref) {
+     return itemWidths.get(getKey(mergedData[index], index));
+   }
+ 
+-  React.useLayoutEffect(function () {
++var useIsomorphicEffectPatched = typeof document !== 'undefined' ? React.useLayoutEffect : React.useEffect;
++useIsomorphicEffectPatched(function () {
+     if (mergedContainerWidth && mergedRestWidth && mergedData) {
+       var totalWidth = suffixWidth;
+       var len = mergedData.length;

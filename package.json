@@ -1,0 +1,53 @@
+{
+  "name": "next-js-template",
+  "private": true,
+  "scripts": {
+    "dev": "next dev ",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest -o --watch",
+    "test:ci": "jest --ci",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.7.1",
+    "antd": "^4.17.2",
+    "axios": "^0.25.0",
+    "next": "12.0.3",
+    "next-connect": "^0.11.0",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "16.11.7",
+    "@types/react": "17.0.34",
+    "@types/react-redux": "^7.1.20",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-testing-library": "^5.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "4.4.4"
+  },
+  "version": "1.0.0",
+  
+  "author": "Carlos SS <santillansoriano00@outlook.com>",
+  "license": "MIT"
+}
